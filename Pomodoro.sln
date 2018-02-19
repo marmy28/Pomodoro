@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomodoro", "Pomodoro\Pomodoro.csproj", "{0FA2E607-D33F-4341-A0DA-50B33F6BB282}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Pomodoro.Models", "Pomodoro.Models\Pomodoro.Models.fsproj", "{6EB7FB03-016D-4525-90A6-7B9711D6AB09}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pomodoro.Localization", "Pomodoro.Localization\Pomodoro.Localization.vbproj", "{CDA8C75D-DC53-437C-B2A5-A8F7A532C448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pomodoro.Tests", "Pomodoro.Tests\Pomodoro.Tests.csproj", "{7055C399-6A43-4A5A-8A7F-EF751D195C12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DF76548B-08D7-4C24-A2CF-26C966AD3897}"
+	ProjectSection(SolutionItems) = preProject
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FA2E607-D33F-4341-A0DA-50B33F6BB282}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FA2E607-D33F-4341-A0DA-50B33F6BB282}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FA2E607-D33F-4341-A0DA-50B33F6BB282}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FA2E607-D33F-4341-A0DA-50B33F6BB282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB7FB03-016D-4525-90A6-7B9711D6AB09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB7FB03-016D-4525-90A6-7B9711D6AB09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB7FB03-016D-4525-90A6-7B9711D6AB09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB7FB03-016D-4525-90A6-7B9711D6AB09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA8C75D-DC53-437C-B2A5-A8F7A532C448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA8C75D-DC53-437C-B2A5-A8F7A532C448}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA8C75D-DC53-437C-B2A5-A8F7A532C448}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA8C75D-DC53-437C-B2A5-A8F7A532C448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7055C399-6A43-4A5A-8A7F-EF751D195C12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7055C399-6A43-4A5A-8A7F-EF751D195C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7055C399-6A43-4A5A-8A7F-EF751D195C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7055C399-6A43-4A5A-8A7F-EF751D195C12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1DBDF0E-E682-4F85-88FE-065D3F683662}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Pomodoro.vsmdi
+	EndGlobalSection
+EndGlobal

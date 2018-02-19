@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Pomodoro.Views.TimerView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:buttons="clr-namespace:Pomodoro.CustomControls">
+    <StackPanel VerticalAlignment="Center"
+                HorizontalAlignment="Stretch"
+                Orientation="Vertical">
+        <Label VerticalAlignment="Center"
+               Content="{Binding Message, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" />
+        <Grid Margin="5">
+            <ProgressBar Padding="5"
+                         Minimum="0"
+                         ValueChanged="ProgressBar_ValueChanged"
+                         Maximum="{Binding Duration, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                         Value="{Binding TimeSpent, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}" />
+            <TextBlock Name="txTimer"
+                       Text="0%"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+        </Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    Orientation="Horizontal">
+            <buttons:ImageButton Command="{Binding Path=PlayCommand, Mode=OneWay}"
+                                 ToolTip="{Binding Play, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                 ImageSource="/Pomodoro;component/Images/16x16/media-playback-start.png"
+                                 Margin="2"
+                                 Padding="2" />
+            <buttons:ImageButton Command="{Binding Path=PauseCommand, Mode=OneWay}"
+                                 ToolTip="{Binding Pause, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                 ImageSource="/Pomodoro;component/Images/16x16/media-playback-pause.png"
+                                 Margin="2"
+                                 Padding="2" />
+            <buttons:ImageButton Command="{Binding Path=SkipForwardCommand, Mode=OneWay}"
+                                 ToolTip="{Binding SkipForward, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}"
+                                 ImageSource="/Pomodoro;component/Images/16x16/media-skip-forward.png"
+                                 Margin="2"
+                                 Padding="2" />
+        </StackPanel>
+    </StackPanel>
+</UserControl>

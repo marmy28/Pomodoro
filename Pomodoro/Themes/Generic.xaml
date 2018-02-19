@@ -1,0 +1,27 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Pomodoro;component/CustomControls/ImageButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <LinearGradientBrush x:Key="Brush_HeaderBackground"
+                         StartPoint="0.5,0"
+                         EndPoint="0.5,1">
+        <GradientStop Color="#66000088"
+                      Offset="0" />
+        <GradientStop Color="#BB000088"
+                      Offset="1" />
+    </LinearGradientBrush>
+    <Style x:Key="MainBorderStyle"
+           TargetType="{x:Type Border}">
+        <Setter Property="Background"
+                Value="WhiteSmoke" />
+        <Setter Property="BorderBrush"
+                Value="LightGray" />
+        <Setter Property="BorderThickness"
+                Value="1" />
+        <Setter Property="CornerRadius"
+                Value="5" />
+        <Setter Property="SnapsToDevicePixels"
+                Value="True" />
+    </Style>
+</ResourceDictionary>
